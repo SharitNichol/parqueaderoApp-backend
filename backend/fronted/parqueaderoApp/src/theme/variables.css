@@ -1,0 +1,61 @@
+:root {
+  --ion-font-family: -apple-system, system-ui, sans-serif;
+  --ion-color-primary: #003366; /* Azul UCC */
+}
+
+/* Optimización Móvil */
+ion-card {
+  margin: 12px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+ion-button {
+  --border-radius: 10px;
+  height: 50px;
+}
+
+ion-item {
+  --padding-start: 16px;
+  --inner-padding-end: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  /* Móviles pequeños */
+  ion-card {
+    margin: 8px;
+  }
+  
+  ion-button {
+    height: 44px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Tablets */
+  ion-card {
+    margin: 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Desktop */
+  ion-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  ion-card {
+    margin: 20px;
+  }
+}
+
+/* Soporte para modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
